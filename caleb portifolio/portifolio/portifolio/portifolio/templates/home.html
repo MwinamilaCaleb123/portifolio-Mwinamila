@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mwinamila Portfolio</title>
+  {% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="custom-navbar">
+    <ul>
+      <li class="brand-name">Caleb Mwinamila</li>
+      <li ><a href="/home">HOME</a></li>
+      <li><a href="/project">MY PROJECT</a></li>
+      <li><a href="/contact">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section class="home">
+    <div class="home-info">
+      <h2>CALEB MWINAMILA</h2>
+      <h3>I'm a 
+        <span style="--i:4;" data-text="Web System Application Developer">Web System Application Developer</span>
+        <span style="--i:3;" data-text="Network Engineer">Network Engineer</span>
+        <span style="--i:2;" data-text="Graphics Designer">Graphics Designer</span>
+        <span style="--i:1;" data-text="Photographer">Photographer</span>
+      </h3>
+      <p>My name is Caleb C. Mwinamila, a student of Mbeya University of Science and Technology (MUST), pursuing a Bachelor of Computer Science. I'm skilled in Web System application, Network Engineer, Graphics Designer, Photographer.</p>
+    </div>
+
+    <div class="home-image">
+      <div class="image-box">
+        <div class="image-item">
+          <img src="{% static 'Image/caleb.png' %}" alt="Caleb Mwinamila">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

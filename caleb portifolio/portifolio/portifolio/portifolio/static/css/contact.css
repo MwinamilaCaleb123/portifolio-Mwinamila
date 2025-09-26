@@ -1,0 +1,79 @@
+body{
+  background-color: bisque;
+}
+
+/* Center the entire contact form */
+.contact-container {
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    width: 100%;
+}
+
+/* Limit form width */
+.contact-container form {
+    width: 100%;
+    max-width: 600px; /* adjust as needed */
+}
+
+/* Center the text inside the country select dropdown */
+.contact-container select {
+    text-align: center; /* centers the selected option text */
+}
+
+/* Optional: center all input placeholders text */
+.contact-container input::placeholder,
+.contact-container select,
+.contact-container textarea {
+    text-align: center;
+}
+
+/* Center the submit button */
+.contact-container button {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.contact-icon {
+  margin-right: 8px;
+  color: #0f63b8;
+}
+
+
+      /* ✅ Caleb stays white, normal, no hover effect */
+      .navbar-brand-fixed {
+        color: #fff !important;
+        font-weight: normal;
+        text-transform: none;
+        text-decoration: none;
+      }
+      .navbar-brand-fixed:hover {
+        color: #fff !important;
+        text-decoration: none;
+      }
+
+      /* ✅ Orange underline effect on nav links */
+      .nav-link {
+        position: relative;
+        color: #fff !important;
+        text-transform: uppercase;
+        transition: color 0.3s ease;
+      }
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        display: block;
+        margin-top: 5px;
+        right: 0;
+        background: orange;
+        transition: width 0.3s ease;
+        -webkit-transition: width 0.3s ease;
+      }
+      .nav-link:hover::after {
+        width: 100%;
+        left: 0;
+        background: orange;
+      }
+  
